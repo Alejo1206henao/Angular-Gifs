@@ -1,0 +1,23 @@
+<div class="row">
+  <div *ngFor="let gifs of gifs" class="col-md-3 col-sm-6">
+    <div class="card mb-2 text-center bg-dark">
+<!--      TODO: CREAR IMAGEN-->
+<!--      cuando en HTML es igual a una expresión de JavaScript,-->
+<!--      se pone el llaves cuadradas-->
+      <img  [src]="gifs.images.downsized_medium.url"
+            [alt]="gifs.title"
+            class="card-img-top">
+      <div class="card-body text-white">
+        <p class="card-text">
+          {{gifs.title}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  <button type="button" class="list-group-item list-group-item-action">PRIMER</button>-->
+<!--  <button type="button" class="list-group-item list-group-item-action">SEGUNDO</button>-->
+<!--</div>-->
+
+
